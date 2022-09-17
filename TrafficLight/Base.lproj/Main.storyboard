@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="qQv-vy-wmo">
-                                <rect key="frame" x="139" y="138" width="136" height="513.5"/>
+                                <rect key="frame" x="139" y="134" width="136" height="517.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sh0-q3-CGE">
-                                        <rect key="frame" x="0.5" y="0.0" width="135" height="445"/>
+                                        <rect key="frame" x="3.6666666666666572" y="0.0" width="128.66666666666666" height="425"/>
                                         <subviews>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQy-YO-T3y">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128.66666666666666" height="128.33333333333334"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <color key="tintColor" red="0.90961533784866333" green="0.18237140774726868" blue="0.045853935182094574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -31,7 +31,7 @@
                                                 </constraints>
                                             </view>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xa-qA-7hZ">
-                                                <rect key="frame" x="0.0" y="155" width="135" height="135"/>
+                                                <rect key="frame" x="0.0" y="148.33333333333331" width="128.66666666666666" height="128.33333333333331"/>
                                                 <color key="backgroundColor" red="0.89005261659622192" green="0.91259557008743286" blue="0.27655380964279175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.90961533784866333" green="0.18237140774726868" blue="0.045853935182094574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -39,7 +39,7 @@
                                                 </constraints>
                                             </view>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx1-Nc-HYl">
-                                                <rect key="frame" x="0.0" y="310" width="135" height="135"/>
+                                                <rect key="frame" x="0.0" y="296.66666666666669" width="128.66666666666666" height="128.33333333333331"/>
                                                 <color key="backgroundColor" red="0.092768900096416473" green="0.53456294536590576" blue="0.15874418616294861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.092768900096416473" green="0.53456294536590576" blue="0.15874418616294861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -47,16 +47,17 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY1-G7-DaG">
-                                        <rect key="frame" x="0.5" y="473" width="135" height="40.5"/>
+                                        <rect key="frame" x="3.6666666666666572" y="453" width="128.66666666666666" height="64.333333333333371"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="EY1-G7-DaG" secondAttribute="height" multiplier="2:1" id="uWU-5M-Seg"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="NEXT"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="START"/>
                                         <connections>
                                             <action selector="nextButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6L-EJ-xrL"/>
                                         </connections>
@@ -65,6 +66,7 @@
                                 <constraints>
                                     <constraint firstItem="EY1-G7-DaG" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Tx1-Nc-HYl" secondAttribute="width" id="lGn-aP-taE"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

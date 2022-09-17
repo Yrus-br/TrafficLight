@@ -41,11 +41,6 @@ class ViewController: UIViewController {
             yellowLight.alpha = 0.50
             redLight.alpha = 0.50
             nextButton.setTitle("Again?", for: .normal)}
-        }
-        }
-            
-
-//        yellowLight.alpha = 1
-//        greenLight.alpha = 1
-
+    }
+}
 
