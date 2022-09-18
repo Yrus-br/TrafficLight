@@ -13,17 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet var greenLight: UIView!
     
     @IBOutlet var nextButton: UIButton!
+    
     override func viewDidLayoutSubviews() {
-        self.redLight.layer.cornerRadius = self.redLight.bounds.size.height / 2
-        self.yellowLight.layer.cornerRadius = self.yellowLight.bounds.size.height / 2
-        self.greenLight.layer.cornerRadius = self.greenLight.bounds.size.height / 2
+        redLight.layer.cornerRadius = redLight.frame.height / 2
+        yellowLight.layer.cornerRadius = yellowLight.frame.height / 2
+        greenLight.layer.cornerRadius = greenLight.frame.height / 2
         nextButton.layer.cornerRadius = 20
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
     @IBAction func nextButtonTapped() {
         if redLight.alpha == 0.5 {
             redLight.alpha = 1
